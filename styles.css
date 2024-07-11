@@ -1,0 +1,1320 @@
+html,
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-decoration: none;
+
+}
+
+:root {
+    overflow-x: hidden;
+}
+
+/* Temporary outline to see element boundaries  */
+/*
+* {
+    outline: 1px solid red;
+
+}
+*/
+body {
+    font-family: 'DM sans', sans-serif;
+    background-image: linear-gradient(180deg, #FFFFFF, #59A3F4);
+    height: 100%;
+    overflow-x: hidden;
+
+
+}
+
+/*****************icon styles **************************************/
+
+
+i {
+    color: #C82020;
+}
+
+/**************** Nav bar styling  ********************************/
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: .5rem 3rem;
+    margin-top: 1rem;
+    align-items: center;
+}
+
+nav .logo {
+    display: flex;
+    gap: 1rem;
+
+}
+
+nav .logo img {
+    width: 60px;
+}
+
+nav .logo h1 {
+    padding: .5rem;
+    color: black;
+    min-width: 200px;
+}
+
+nav ul {
+
+    display: flex;
+    justify-content: space-between;
+    min-width: 100%;
+    gap: 3rem;
+
+}
+
+nav ul li a {
+    color: black;
+    font-size: 1.5rem;
+}
+
+nav ul li a:hover {
+    color: #79151c;
+    font-weight: 500;
+}
+
+#iconham {
+    display: none;
+}
+
+
+/***************hamburger menu***********************/
+
+.hamburger-menu {
+    position: fixed;
+    top: 0;
+    right: -300px;
+    width: 300px;
+    padding: 2rem;
+    background-color: #59a4f4ef;
+    z-index: 200;
+    height: 100%;
+    transition: transform 1s ease-in-out;
+
+}
+
+.hamburger-menu ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 4rem;
+    gap: 2rem;
+}
+
+.hamburger-menu ul a {
+    color: black;
+    font-size: 1.3rem;
+    font-weight: 700;
+}
+
+.hamburger-menu ul a:hover {
+    text-shadow: 2px 2px 5px white;
+
+}
+
+.hamburger-menu ul i {
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+    font-size: 2rem;
+    color: black;
+}
+
+
+/* ****************Hero section **********************/
+
+.hero {
+    margin: auto;
+    display: flex;
+    width: 85%;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+
+
+}
+
+.hero a {
+    color: black;
+}
+
+.hero p {
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+.hero img {
+    width: 100%;
+    max-width: 550px;
+    min-width: 300px;
+    transform:translateZ(0px);
+    animation: rotateeffect 33s linear infinite;
+
+}
+
+.hero p span {
+    font-weight: bold;
+    font-size: 5rem;
+    color: transparent;
+    border: black 1rem;
+    -webkit-text-stroke: 2px black;
+    letter-spacing: 2px;
+}
+
+.hero p #bold-span {
+    position: relative;
+    color: black;
+    right: 8.3rem;
+}
+
+.hero .btn {
+    font-size: 1.5rem;
+    font-weight: 800;
+    position: relative;
+    top: 15rem;
+    right: 10rem;
+    display: block;
+    flex-shrink: 0;
+    cursor: pointer;
+    display: block;
+    width: 170px;
+}
+
+.hero .btn:hover {
+    color: #C82020;
+}
+
+#absolute {
+    position: absolute;
+    z-index: -1;
+    top: 3rem;
+    right: 2rem;
+    transform: rotate(45deg);
+    width: 400px;
+    overflow-x: hidden;
+     animation:abseffect 20s linear infinite;
+
+
+
+}
+
+.shadow {
+    width: 300px;
+    position: absolute;
+    top: 10rem;
+    right: 2rem;
+    height: 200px;
+    background-color: black;
+    border-radius: 50%;
+    filter: blur(4rem);
+    z-index: -3;
+}
+
+.imgwrap{
+    
+    perspective:500px;
+}
+
+
+
+@keyframes rotateeffect{
+    0%,100%{
+        transform:translateZ(0px)
+    }
+
+    25%{
+        transform:rotateX(20deg) rotateY(20deg)
+    }
+
+
+    75%{
+        transform:rotateX(20deg) rotateY(-20deg)translateZ(-20px);
+    } 
+
+    85%{
+        transform:translateZ(-20px) rotateX(20deg)
+    }
+
+  
+}
+@keyframes abseffect{
+    0%,100%{
+        transform:translateZ(0px) rotate(45deg)
+    }
+
+    25%{
+        transform:rotateX(20deg) rotateY(-20deg)translateZ(-20px) rotate(55deg);
+    } 
+
+    75%{
+        transform:rotateX(20deg) rotateY(20deg) rotate(65deg)
+    }   
+
+    85%{
+        transform:rotateX(40deg) rotate(55deg)
+    }
+
+  
+}
+
+/**********************section fantasies*********************/
+
+
+#algostudio {
+    min-height: 650px;
+    background-color: #FFFFFF;
+    text-align: center;
+    height: 100%;
+}
+
+#wrapper {
+    max-width: 70%;
+    margin: 10rem auto;
+    padding: 4rem 0;
+
+}
+
+#fantasies {
+    margin-top: 4rem;
+    color: #0B62B0;
+
+}
+
+#millions {
+    margin-top: 1rem;
+}
+
+#des {
+
+    width: 70%;
+    margin: 1.5rem auto;
+}
+
+#statbox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6rem;
+    width: 85%;
+    margin: 5rem;
+
+}
+
+#statbox .stat i {
+    font-size: 4rem;
+}
+
+i+p {
+    margin-top: 1rem;
+}
+
+
+/*******************************************products section *************************************************************************************/
+
+#products {
+    text-align: center;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+#products h2 {
+    margin-top: 8rem;
+    margin-bottom: 1rem;
+}
+
+#products #productDes {
+    max-width: 45rem;
+    margin: 0 auto;
+}
+
+/*************************************products slider******************************************/
+
+.okkomawrapper {
+    width: 1200px;
+    margin: 1rem auto;
+    background-color: #6CB1FF;
+    height: 1000px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5rem;
+    position: relative;
+
+}
+
+
+.bordereka {
+
+    background-color: #6CB1FF;
+    width: 90%;
+    height: 80%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+
+
+}
+
+.productboxflex {
+    display: flex;
+
+    transition: transform 1s linear;
+}
+
+
+.productstika {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.product-card {
+    min-width: 18rem;
+    padding: .5rem;
+
+}
+
+.product-card img {
+    width: 100%;
+}
+
+#products #lefticon,
+#righticon {
+    color: #FFFFFF;
+    font-size: 2.5rem;
+    position: absolute;
+    z-index: 100;
+    background-color: #0B62B0;
+    width: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+#products #lefticon:hover,
+#righticon:hover {
+    background-color: #0b63b0b7;
+}
+
+#lefticon {
+    top: 50%;
+    left: 15%;
+
+}
+
+#righticon {
+    top: 50%;
+    right: 15%;
+}
+
+.dots {
+    font-size: .5rem;
+    margin-bottom: 2rem;
+    position: absolute;
+    bottom: 2%;
+    left: 50%;
+
+}
+
+.dots i {
+    padding-left: .2rem;
+}
+
+#dot4,
+#dot5 {
+    display: none
+}
+
+/***********************about section **********************************************/
+
+#about {
+    min-height: 650px;
+    background-color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+#about img {
+    width: 100%;
+    margin-right: 10rem;
+    min-width: 250px;
+    max-width: 400px;
+}
+
+#about #textcontent {
+    margin: 5rem 0 0 10rem;
+    min-width: 350px;
+}
+
+#textcontent #main {
+    margin-bottom: 2rem;
+    font-size: 2rem;
+}
+
+#textcontent .abtpara {
+    margin: 2rem 0;
+}
+
+.title2 {
+    font-weight: 500;
+}
+
+
+#textcontent i {
+    display: none;
+}
+
+/************************** contact ***************************************/
+
+#contact {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10rem auto;
+    width: 80%;
+    gap: 2rem;
+}
+
+#contact #contactimg {
+    max-width: 300px;
+    align-self: flex-end;
+    width: 100%;
+    min-width: 200px;
+}
+
+#contact .formeka {
+    width: 750px;
+    height: 350px;
+
+}
+
+.formeka form {
+    width: 100%;
+
+}
+
+form label {
+    display: block;
+    margin: .5rem 0;
+}
+
+form input {
+    width: 100%;
+    border-radius: 3px;
+    padding: .5rem;
+    font-size: .75rem;
+    border: none;
+
+
+}
+
+form input:focus {
+    outline: none;
+    border: 2px solid rgb(2, 31, 105);
+}
+
+
+form textarea {
+    width: 100%;
+    height: 5rem;
+    font-family: 'DM sans', sans-serif;
+    font-size: .75rem;
+    padding: .5rem;
+    resize: none;
+    border-radius: 3px;
+    border: none;
+}
+
+
+form textarea:focus {
+    outline: none;
+    border: 2px solid rgb(2, 31, 105);
+}
+
+.formeka button {
+    width: 100%;
+    color: #FFFFFF;
+    background-color: #C82020;
+    font-family: 'DM sans', sans-serif;
+    font-weight: 800;
+    margin-top: 3rem;
+    height: 2.5rem;
+    border: none;
+    border-radius: 3px;
+    transition: background-color .5s linear;
+}
+
+.formeka button:active {
+    background-color: #650404;
+}
+
+
+.formeka button i {
+    color: #FFFFFF;
+}
+
+.formeka h2 {
+    padding: 2rem;
+    padding-left: 0;
+}
+
+#formheader {
+    display: flex;
+    align-items: center;
+
+
+}
+
+#formheader #headerimg {
+    display: none;
+    width: 50px;
+}
+
+/**********************footer**************************/
+
+footer {
+    background-color: #FFFFFF;
+    height: 100%;
+    text-align: center;
+    padding-bottom: .5rem;
+
+}
+
+.footerlogos {
+    margin-left: 5rem;
+}
+
+footer li:first-child {
+    font-weight: 800;
+    margin-bottom: 1.5rem;
+    color: black;
+}
+
+footer li {
+    margin: 1rem 0;
+}
+
+footer li i {
+    color: #0000009f;
+
+}
+
+.footerstuff {
+    display: flex;
+    padding: 3.5rem;
+    justify-content: space-between;
+    gap: 4rem;
+    text-align: left;
+    color: #6F6C90;
+}
+
+.footerstuff .text {
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+    margin-right: 5rem;
+}
+
+hr {
+    width: 85%;
+    color: #6f6c9085;
+    display: inline-block;
+
+}
+
+footer .logo img {
+    max-width: 40px;
+}
+
+.footerstuff .logo h1 {
+    color: black;
+    min-width: 200px;
+}
+
+.footerstuff p {
+    color: #0B62AF;
+}
+
+.socials i {
+    margin: .5rem;
+}
+
+#end {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    width: 85%;
+    margin: 1rem auto 0 auto;
+    color: #6F6C90;
+}
+
+
+
+
+
+
+
+/**************************************************************************************************************************************************/
+/***********************************************************************Media Queries****************************************************************/
+
+
+
+
+
+
+/****************************************          screen size 1400           *********************************************************************/
+
+
+
+@media screen and (max-width:1400px) {
+
+    /*************hero****************/
+    #absolute {
+        width: 300px;
+    }
+
+    /******************product************/
+    .okkomawrapper {
+        width: 100%;
+
+    }
+
+}
+
+
+/*************************************************   screen size 1200   *******************************************************************/
+
+@media screen and (max-width:1200px) {
+
+    /*********************************nav changes*********************************************/
+    nav ul li a {
+
+        font-size: 1.2rem;
+    }
+
+    /* ******************************hero changes *****************************************/
+    .hero {
+        height: 80vh;
+    }
+
+    #absolute {
+
+        width: 250px;
+
+    }
+
+    .hero .btn {
+        font-size: 1.2rem;
+        font-weight: 700;
+        right: 5rem;
+        top: 10rem;
+
+    }
+
+    .hero p {
+        font-size: 2.2rem;
+        font-weight: 600;
+    }
+
+
+    /****************************stats cahnges********************************************/
+
+    #wrapper {
+
+        padding-bottom: 4rem;
+        margin-bottom: 0;
+    }
+
+    #statbox .stat i {
+        font-size: 2.5rem;
+    }
+
+    /*************************products changes*********************************************/
+    #products h2 {
+        margin-top: 4rem;
+    }
+
+    .product-card {
+        min-width: 16rem;
+
+    }
+
+}
+
+/*****************************************************screen size 1024***********************************************************************/
+
+@media screen and (max-width: 1024px) {
+
+    /*********************hero************************************/
+    .hero {
+        height: 70vh;
+    }
+
+    #absolute {
+
+        width: 250px;
+
+    }
+
+    .shadow {
+        width: 100px;
+    }
+
+    /***************product cards**********************************/
+    .product-card {
+        min-width: 15rem;
+
+    }
+
+    /********************footer***********************/
+
+    .footerstuff .logo h1 {
+        font-size: 1.5rem;
+    }
+
+
+    .footerstuff .text {
+
+        gap: 3rem;
+
+    }
+
+
+}
+
+/****************************************************************screen size 900***********************************************************/
+
+@media screen and (max-width:900px) {
+
+
+    /****************hero changes***************************************/
+    .hero {
+        height: 65vh;
+    }
+
+    .hero .btn {
+        font-size: 1.2rem;
+        font-weight: 700;
+        top: 30rem;
+        right: 5rem;
+        position: absolute;
+       
+
+    }
+
+    #absolute {
+
+        display: none;
+    }
+
+    .shadow {
+        display: none;
+    }
+
+      .imgwrap{
+        perspective: none;}
+
+    /***************fantasies************************/
+
+    #wrapper {
+        margin-top: 6rem;
+    }
+
+    /**********************foooter*************/
+    .footerstuff {
+        padding: 1rem;
+    }
+
+    .footerstuff .logo h1 {
+        font-size: 1.2rem;
+    }
+
+
+
+}
+
+
+
+
+
+
+
+
+/****************************************************************screen size 800***********************************************************/
+
+
+@media (max-width:800px) {
+    /***********************nav*****************************************/
+
+    .nav-links {
+        display: none;
+    }
+
+    #iconham {
+        display: block;
+        color: black;
+        font-size: 1.5rem;
+    }
+
+    /********************hero***************************************/
+
+    .hero p #bold-span {
+        display: none;
+    }
+
+    .hero .btn {
+        font-size: 1.2rem;
+        font-weight: 700;
+        right: 5rem;
+        top: 35rem;
+
+    }
+
+    .hero p {
+        position: relative;
+        right: 5rem;
+    }
+
+    .hero img {
+        position: absolute;
+        z-index: -1;
+        right: 1rem;
+        top: 5rem;
+        max-width: 25rem;
+        ;
+    }
+
+    /***************************fantasies*****************************/
+
+    #statbox {
+        display: flex;
+        display: inline-block;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 6rem;
+        width: 80%;
+        margin: 0;
+
+    }
+
+    #des {
+        width: 85%;
+    }
+
+    /***********************products*********************************/
+    #products #productDes {
+        max-width: 35rem;
+        margin: 0 auto;
+        width: 85%;
+    }
+
+    .product-card {
+        min-width: 13rem;
+
+    }
+
+    .product-card p {
+        font-size: 14px;
+    }
+
+    .okkomawrapper {
+        height: 90vh;
+    }
+
+    .bordereka {
+        height: 90%;
+    }
+
+    /*********************footer*******************************/
+
+    #productul {
+
+        display: none;
+    }
+
+    .socials i {
+        margin: .3rem;
+    }
+
+
+    .footerstuff {
+        padding: 1rem;
+        align-items: center;
+    }
+
+    .footerlogos {
+        margin-left: 4rem;
+    }
+
+    #end {
+        font-size: .8rem;
+    }
+
+
+
+}
+
+
+
+
+
+
+
+
+/****************************************************************screen size 700***********************************************************/
+
+
+
+
+@media screen and (max-width:700px) {
+
+    /*************hero*************************/
+
+    .hero p {
+        position: relative;
+        right: 0rem;
+    }
+
+    .hero img {
+        position: absolute;
+        z-index: -1;
+        right: 1rem;
+        top: 14rem;
+        max-width: 25rem;
+        ;
+    }
+
+    .hero .btn {
+        font-size: 1.2rem;
+        font-weight: 700;
+        right: 5rem;
+        top: 36rem;
+
+    }
+
+
+    /**********************about******************/
+    #textcontent #main {
+        margin-bottom: 2rem;
+        font-size: 1.5rem;
+    }
+
+    #about img {
+        display: none;
+    }
+
+    #textcontent i {
+        display: inline;
+
+    }
+
+    #about #textcontent {
+        margin: 0 0 0 0;
+        max-width: 500px;
+    }
+
+    /********************product****************/
+
+
+    .okkomawrapper {
+        height: 60vh;
+        background-color: #a5cdf9;
+
+    }
+
+    .productstika {
+        display: flex;
+
+    }
+
+    .product-card {
+        min-width: 14rem;
+        background-color: rgba(255, 255, 255, 0.626);
+        margin: .4rem;
+    }
+
+    .product-card h3 {
+        font-size: 1rem;
+    }
+
+
+    #dot4,
+    #dot5 {
+        display: inline;
+    }
+
+    .bordereka {
+
+        background-color: #a5cdf9;
+
+
+
+    }
+
+    /***********contact***************/
+
+    #contact {
+        margin-top: 5rem;
+    }
+
+    /****************footer****************/
+
+    #contactul {
+        display: none;
+    }
+
+
+    #contact img {
+        display: none;
+    }
+
+    #formheader #headerimg {
+        display: inline-block;
+    }
+
+    .footerstuff {
+        align-items: center;
+    }
+
+}
+
+
+/*************************************************************screen width 630px******************************************************************/
+
+
+@media screen and (max-width:630px) {
+
+    /*******************hero******************/
+    h2 {
+        font-size: 1.2rem;
+    }
+
+    .hero {
+
+        width: 90%;
+        gap: 0rem;
+    }
+
+    /************footer********************/
+
+    #end {
+
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .footerstuff {
+
+        justify-content: center;
+        gap: 2rem;
+
+    }
+
+
+}
+
+
+
+
+/*************************************************************screen width 600px******************************************************************/
+
+
+@media screen and (max-width:600px) {
+
+    /**************hero************************/
+
+    .hero .btn {
+        font-size: 1rem;
+
+        right: 50%;
+        top: 70%;
+
+    }
+
+
+}
+
+
+/*************************************************************screen width 540px******************************************************************/
+
+@media screen and (max-width:540px) {
+
+    p {
+        font-size: .9rem;
+    }
+
+    /*****************nav****************/
+
+    nav .logo {
+        gap: .4rem;
+    }
+
+    nav .logo h1 {
+        font-size: 1.3rem;
+    }
+
+    nav .logo img {
+        width: 40px;
+    }
+
+
+    /***************hero*****************/
+    .hero img {
+
+        top: 20rem;
+        max-width: 20rem;
+    }
+
+    .hero p {
+        font-size: 1.8rem;
+        bottom: 2rem;
+
+    }
+
+    .hero .btn {
+        font-size: 1rem;
+
+        right: 25%;
+        top: 85%;
+
+    }
+
+    /************about***************/
+
+    #about #textcontent {
+
+        min-width: 200px;
+        padding: 1rem;
+    }
+
+    #wrapper {
+        max-width: 85%;
+
+
+    }
+
+    /***************footer*************/
+
+    footer li {
+        margin: .5rem 0;
+
+    }
+
+    .footerlogos {
+        margin-left: 2rem;
+    }
+
+    .footerstuff .logo h1 {
+
+        min-width: 150px;
+    }
+
+    #companyul {
+        min-width: 100px;
+    }
+
+}
+
+
+
+
+/*************************************************************screen width 400px******************************************************************/
+
+@media screen and (max-width:400px) {
+
+    /******************nav*******************/
+    nav {
+        padding: .5rem 2rem;
+    }
+
+    nav .logo h1 {
+        padding: .5rem;
+        color: black;
+        min-width: 150px;
+    }
+
+
+    /**************hero*****************************/
+
+    .hero p span {
+        font-weight: bold;
+        font-size: 3rem;
+
+    }
+
+    #end p {
+        font-size: .7rem;
+    }
+
+
+
+/*************fantasies********************/
+
+#fantasies {
+    margin-top: 1rem;
+
+}
+
+
+/***************products******************/
+
+.product-card {
+    min-width: 12rem;
+
+}
+
+
+.dots {
+
+    left: 45%;
+}
+
+}
+
+/*************************************************************screen width 350px******************************************************************/
+
+@media screen and (max-width:350px) {
+
+
+
+    .footerlogos {
+        margin-left: 0rem;
+    }
+
+    .footerstuff .text {
+
+        margin-right: 0rem;
+    }
+
+}
+
+
+@media screen and (max-height:700px) {
+
+    .hero {
+        height: 70vh;
+
+    }
+
+    .hero .btn {
+        top: 91%;
+    }
+
+    .dots {
+              bottom: -10%;
+    }
+
+}
