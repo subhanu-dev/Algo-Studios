@@ -1,4 +1,4 @@
-# Algo Studios
+#  <img src="images/logo.png" alt="Logo" width="40" height="40">   Algo Studios
 
 Category : UI/UX and Front End Web Development
 
